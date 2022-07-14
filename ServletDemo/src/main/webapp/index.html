@@ -1,28 +1,4 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>View User</title>-->
-<!--</head>-->
-<!--<body>-->
 
-<!--<div>-->
-
-<!--    <h2> Search Your Info </h2>-->
-<!--    <p>-->
-<!--        Put in your userID to see your current information-->
-<!--    </p>-->
-<!--    <form method="get" action="user" id="user-form">-->
-<!--        <label for="user-id"> Enter your User ID </label><br>-->
-<!--        <input type="number" name="user-id-input" id="user-id"><br>-->
-<!--        <br>-->
-<!--        <input type="submit" value="Click here to Search">-->
-<!--    </form>-->
-
-<!--</div>-->
-
-<!--</body>-->
-<!--</html>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,15 +15,15 @@
     <form method="get" action="user">
         <label> Enter Your Email Address </label>
         <br>
-        <input type="text" name="email-sign-in">
+        <input type="text" id="email-sign-in">
         <br>
         <label> Enter Your Last Name (Password) </label>
         <br>
         <!--        name is referring to the servlet get-->
-        <input type="password" name="password-sign-in">
+        <input type="password" id="password-sign-in">
         <br>
         <br>
-        <input type="submit" value="Login">
+        <input type="submit" id="login-button" value="Login">
 
     </form>
     <br>
@@ -64,6 +40,8 @@
     </form>
 
 </div>
+
+<script src="./javascript/index.js"></script>
 
 </body>
 </html>

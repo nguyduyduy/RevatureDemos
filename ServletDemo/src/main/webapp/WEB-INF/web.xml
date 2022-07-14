@@ -42,6 +42,7 @@
     <servlet-mapping>
         <servlet-name>userServlet</servlet-name>
         <url-pattern>/user</url-pattern>
+        <url-pattern>/tickets</url-pattern>
     </servlet-mapping>
 <!--this is our SignUp Servlet-->
     <servlet>
