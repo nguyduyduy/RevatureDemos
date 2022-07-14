@@ -34,7 +34,7 @@ public class ConnectionManager {
         try{
 
             Properties props = new Properties();
-            FileReader fileReader = new FileReader("/Users/nguyr/Documents/ServletDemo" + "/src/main/resources/jdbc.properties");
+            FileReader fileReader = new FileReader("/Users/nguyr/Documents/RevatureDemos/ServletDemo" + "/src/main/resources/jdbc.properties");
 
             props.load(fileReader);
 

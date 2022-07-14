@@ -96,7 +96,7 @@ public class UserDAO implements CustomCRUDInterface<User> {
         return false;
     }
     // String password in this case is the last_name
-    public CurrentUser loginCurrentUser(String email, String password){
+    public User loginCurrentUser(String email, String password){
 
         try {
             String sql = "SELECT * FROM users WHERE email = ?";
@@ -106,7 +106,7 @@ public class UserDAO implements CustomCRUDInterface<User> {
             ResultSet rs = pstmt.executeQuery();
 
             if(rs.next() && rs.getString("last_name").equals(password)){
-               return new CurrentUser(rs.getInt("user_id"),
+               return new User(rs.getInt("user_id"),
                        rs.getString("first_name"),
                        rs.getString("last_name"),
                        rs.getString("email"));
@@ -117,7 +117,8 @@ public class UserDAO implements CustomCRUDInterface<User> {
             System.out.println("This is the userDAO " + e.getMessage());
         }
 
-        return CurrentUser.currentUser;
+
+        return null;
     }
 
 
